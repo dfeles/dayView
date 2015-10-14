@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DayViewHeaderView : UIView
+@interface DayViewHeaderView : UIView{
+    UIButton *closeButton;
+    UIButton *priceAlertButton;
+    UIButton *shareButton;
+    UILabel *titleLabel;
+    UILabel *subTitleLabel;
+    UISegmentedControl *segmentedControl;
+}
 
 -(int) getHeight;
 

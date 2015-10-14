@@ -16,10 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    padding = 20;
+    padding = 15;
     screenWidth = [UIScreen mainScreen].bounds.size.width;
     
-    [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.0]];
     
     [self createHeader];
     [self createScrollView];
@@ -40,14 +40,14 @@
 -(void)createHeader
 {
     dayViewHeader = [DayViewHeaderView new];
-    [dayViewHeader setFrame:CGRectMake(0, 0, screenWidth, 80)];
+    [dayViewHeader setFrame:CGRectMake(0, 0, screenWidth, 110)];
     [self.view addSubview:dayViewHeader];
 }
 
 
 -(void)createScrollView
 {
-    scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, [dayViewHeader getHeight], self.view.frame.size.width, self.view.frame.size.height-50)];
+    scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, [dayViewHeader getHeight], self.view.frame.size.width, self.view.frame.size.height-[dayViewHeader getHeight])];
     
     [self.view addSubview:scrollView];
     
@@ -64,7 +64,7 @@
         CGFloat cardWidth = screenWidth - padding*2.0;
         CGFloat cardHeight = cardWidth / 4.0 * 3.0;
         
-        [dayViewCard setFrame:CGRectMake(padding, 10+i*(cardHeight+padding), cardWidth, cardHeight)];
+        [dayViewCard setFrame:CGRectMake(padding, padding+i*(cardHeight+padding), cardWidth, cardHeight)];
         [dayViewCardContainer addSubview:dayViewCard];
     }
     
@@ -73,7 +73,7 @@
 {
     [self resizeToFitSubviews: dayViewCardContainer];
     scrollView.contentSize = CGSizeMake(dayViewCardContainer.frame.size.width,dayViewCardContainer.frame.size.height);
-    scrollView.contentInset = UIEdgeInsetsMake(10.0f, 0, 40.0f, 0);
+    scrollView.contentInset = UIEdgeInsetsMake(padding, 0, padding, 0);
 }
 
 -(void)resizeToFitSubviews: (UIView*)view

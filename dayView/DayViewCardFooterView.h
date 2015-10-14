@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DayViewCardFooterView.h"
 
-@interface DayViewCardView : UIView{
-    DayViewCardFooterView* dayViewCardFooter;
-}
+@interface DayViewCardFooterView : UIView
 
 
 @end
