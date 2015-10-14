@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DayViewCardFooterView : UIView
+@interface DayViewCardFooterView : UIView{
+    UILabel *priceLabel;
+    UILabel *detailLabel;
+    UIButton *button;
+}
 
 
 @end
