@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DayViewCardView.h
 //  dayView
 //
 //  Created by Daniel Feles on 14/10/2015.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DayViewCardView : UIView
 
 
 @end
