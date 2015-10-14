@@ -26,9 +26,7 @@
     [self addCardsToDayView:10];
     [self updateScrollView];
     
-    
-    
-    
+    [self.view addSubview:dayViewHeader];
 }
 
 
@@ -41,7 +39,6 @@
 {
     dayViewHeader = [DayViewHeaderView new];
     [dayViewHeader setFrame:CGRectMake(0, 0, screenWidth, 110)];
-    [self.view addSubview:dayViewHeader];
 }
 
 
@@ -62,7 +59,7 @@
     {
         DayViewCardView* dayViewCard = [DayViewCardView new];
         CGFloat cardWidth = screenWidth - padding*2.0;
-        CGFloat cardHeight = cardWidth / 4.0 * 3.0;
+        CGFloat cardHeight = 200;
         
         [dayViewCard setFrame:CGRectMake(padding, padding+i*(cardHeight+padding), cardWidth, cardHeight)];
         [dayViewCardContainer addSubview:dayViewCard];

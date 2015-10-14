@@ -16,6 +16,7 @@
 		C7CF90421BCE75B3003FB906 /* DayViewCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CF90411BCE75B3003FB906 /* DayViewCardView.m */; };
 		C7F3D8091BCE8DC900314E48 /* DayViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CF90461BCE8757003FB906 /* DayViewHeaderView.m */; };
 		C7F3D80C1BCEA2B200314E48 /* DayViewCardFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3D80B1BCEA2B200314E48 /* DayViewCardFooterView.m */; };
+		C7F3D8101BCEAA0E00314E48 /* DayViewCardBoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3D80F1BCEAA0E00314E48 /* DayViewCardBoundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C7CF90471BCE8785003FB906 /* DayViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayViewHeaderView.h; sourceTree = "<group>"; };
 		C7F3D80B1BCEA2B200314E48 /* DayViewCardFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayViewCardFooterView.m; path = dayViewCard/DayViewCardFooterView.m; sourceTree = "<group>"; };
 		C7F3D80D1BCEA36000314E48 /* DayViewCardFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewCardFooterView.h; sourceTree = "<group>"; };
+		C7F3D80F1BCEAA0E00314E48 /* DayViewCardBoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayViewCardBoundView.m; path = dayViewCard/DayViewCardBoundView.m; sourceTree = "<group>"; };
+		C7F3D8111BCEAA1600314E48 /* DayViewCardBoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewCardBoundView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				C7CF90431BCE75C0003FB906 /* DayViewCardView.h */,
 				C7F3D80B1BCEA2B200314E48 /* DayViewCardFooterView.m */,
 				C7F3D80D1BCEA36000314E48 /* DayViewCardFooterView.h */,
+				C7F3D80F1BCEAA0E00314E48 /* DayViewCardBoundView.m */,
+				C7F3D8111BCEAA1600314E48 /* DayViewCardBoundView.h */,
 			);
 			name = DayViewCard;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				C7CF900B1BCE7395003FB906 /* main.m in Sources */,
 				C7F3D80C1BCEA2B200314E48 /* DayViewCardFooterView.m in Sources */,
 				C7CF90421BCE75B3003FB906 /* DayViewCardView.m in Sources */,
+				C7F3D8101BCEAA0E00314E48 /* DayViewCardBoundView.m in Sources */,
 				C7F3D8091BCE8DC900314E48 /* DayViewHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

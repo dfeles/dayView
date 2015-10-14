@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "DayViewCardFooterView.h"
+#import "DayViewCardBoundView.h"
 
 @interface DayViewCardView : UIView{
     DayViewCardFooterView* dayViewCardFooter;
+    DayViewCardBoundView* inBound;
+    DayViewCardBoundView* outBound;
 }
 
 

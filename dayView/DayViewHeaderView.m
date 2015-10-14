@@ -24,6 +24,11 @@ int screenWidth;
     {
         [self setBackgroundColor:[UIColor whiteColor]];
         
+        self.layer.masksToBounds = NO;
+        self.layer.shadowOffset = CGSizeMake(0, 1);
+        self.layer.shadowRadius = 0;
+        self.layer.shadowOpacity = 0.15;
+        
         
         screenWidth = [UIScreen mainScreen].bounds.size.width;
         
